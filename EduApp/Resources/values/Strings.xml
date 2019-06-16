@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">EduApp</string>
-    <string name="action_settings">Settings</string>
+  
+    <string name="infoActivity_nextVk">Далее</string>
+    <string name="infoActivity_regulations">Осуществляя вход, вы выражаете согласие с нашей <a href="">Политикой конфиденциальности</a></string>
+    <string name="resultTestActivity_close">Закрыть</string>
 </resources>

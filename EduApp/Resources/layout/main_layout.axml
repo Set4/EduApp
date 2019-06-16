@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<android.support.design.widget.BottomNavigationView
+        android:id="@+id/mainActivity_bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom ="true"
+        android:background="@color/bottomNavigation_background"
+        app:menu="@menu/bottom_navigation_main"
+	    android:fitsSystemWindows="true"
+        android:animateLayoutChanges="false"
+        android:splitMotionEvents="false"/>
+	<!--app:labelVisibilityMode="unlabeled"
+		app:itemIconSize="26dp"-->
+
+	<FrameLayout
+        android:id="@+id/mainActivity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_alignParentTop = "true"
+		android:layout_above = "@id/mainActivity_bottomNavigation"
+		android:background="@color/window_background"/>
+</RelativeLayout>
