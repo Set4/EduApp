@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
 	android:background="@color/window_background">
 	<ImageView
+		android:id="@+id/infoItem_content"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
 		android:layout_centerHorizontal ="true"
-        android:src="@drawable/cm_icon"
         android:scaleType="fitCenter"
 		android:layout_marginTop="100dp"/>
 </RelativeLayout>

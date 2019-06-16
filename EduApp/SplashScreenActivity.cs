@@ -7,7 +7,7 @@ using Android.Support.V7.App;
 
 namespace EduApp
 {
-    [Activity(Theme = "@style/MyTheme.Splash", Icon = "@drawable/cm_icon_old", RoundIcon = "@drawable/cm_icon",
+    [Activity(Theme = "@style/MyTheme.Splash", Icon = "@drawable/logo", RoundIcon = "@drawable/logo",
        MainLauncher = true, NoHistory = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class SplashScreenActivity : AppCompatActivity
     {
@@ -19,6 +19,7 @@ namespace EduApp
         public async Task Initialize()
         {
             await Task.Delay(2000);
+            StartActivity(new Intent(BaseContext, typeof(InfoActivity)));
         }
     }
 }

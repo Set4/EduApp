@@ -7,6 +7,6 @@
     <bitmap
         android:tileMode="disabled"
         android:gravity="center"
-        android:src="@drawable/cm_icon"/>
+        android:src="@drawable/logo"/>
   </item>
 </layer-list>

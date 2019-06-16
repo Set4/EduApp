@@ -23,9 +23,6 @@ namespace EduApp
         [BindView(Resource.Id.infoActivity_infoVP)]
         ViewPager viewPager;
 
-        [BindView(Resource.Id.infoActivity_nextBtn)]
-        Button nextBtn;
-
         [BindView(Resource.Id.infoActivity_pageIndicator)]
         CircleIndicator pageIndicator;
 
@@ -64,12 +61,13 @@ namespace EduApp
 
         public InfoViewPagerAdapter(FragmentManager fragmentManager) : base(fragmentManager)
         {
-            cardFragments = new List<Fragment>{
-                    new InfoFragment(),
-                    new InfoFragment(),
-                    new InfoFragment(),
-                    new InfoFragment()
-                };
+            cardFragments = new List<Fragment>
+            {
+                    new InfoFragment(Resource.Drawable.info1),
+                    new InfoFragment(Resource.Drawable.info2),
+                    new InfoFragment(Resource.Drawable.info3),
+                    new InfoFragment(Resource.Drawable.info4)
+            };
         }
 
         public override int Count => cardFragments.Count;
@@ -111,18 +109,27 @@ namespace EduApp
     {
         int imageResId;
 
-        public InfoFragment()
-        {
-        }
+        [BindView(Resource.Id.infoItem_content)]
+        ImageView contentImageView;
 
         public InfoFragment(int imageResId)
         {
+            this.imageResId = imageResId;
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.info_item, container, false);
+            Cheeseknife.Bind(this, view);
+            contentImageView.SetBackgroundResource(imageResId);
+
             return view;
+        }
+
+        public override void OnDestroyView()
+        {
+            base.OnDestroyView();
+            Cheeseknife.Reset(this);
         }
     }
 }

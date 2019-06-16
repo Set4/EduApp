@@ -5,7 +5,7 @@ using CheeseBind;
 
 namespace EduApp.Fragments
 {
-    public class NewsFragment : Fragment
+    public class StatFragment : Fragment
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {

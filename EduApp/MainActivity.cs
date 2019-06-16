@@ -7,6 +7,7 @@ using Android.Support.Design.Widget;
 using CheeseBind;
 using Android.Content.PM;
 using EduApp.Utility;
+using EduApp.Fragments;
 
 namespace EduApp
 {
@@ -36,11 +37,11 @@ namespace EduApp
 
             switch (e.Item.ItemId)
             {
-                case Resource.Id.menu_news:
+                case Resource.Id.menu_stat:
                     fragmentTx.Replace(Resource.Id.mainActivity_content, new StatFragment()).Commit();
                     break;
-                case Resource.Id.menu_favorites:
-                    fragmentTx.Replace(Resource.Id.mainActivity_content, new FavoritTasksFragment()).Commit();
+                case Resource.Id.menu_task:
+                   // fragmentTx.Replace(Resource.Id.mainActivity_content, new FavoritTasksFragment()).Commit();
                     break;
             }
         }

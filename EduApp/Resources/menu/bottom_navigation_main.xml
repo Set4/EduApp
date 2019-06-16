@@ -2,33 +2,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
   <item
-      android:id="@+id/menu_news"
+      android:id="@+id/menu_stat"
       android:enabled="true"
-      android:icon="@drawable/ic_tab_24"
-      android:title="@string/menu_news"
+      android:icon="@drawable/main"
+      android:title=""
       app:showAsAction="ifRoom" />
   <item
-      android:id="@+id/menu_favorites"
+      android:id="@+id/menu_task"
       android:enabled="true"
-      android:icon="@drawable/ic_filter_none_24"
-      android:title="@string/menu_favorites"
+      android:icon="@drawable/task"
+      android:title=""
       app:showAsAction="ifRoom" />
   <item
-      android:id="@+id/menu_search"
+      android:id="@+id/menu_check"
       android:enabled="true"
-      android:icon="@drawable/ic_search_24"
-      android:title="@string/menu_search"
+      android:icon="@drawable/check"
+      android:title=""
       app:showAsAction="ifRoom" />
   <item
-       android:id="@+id/menu_chats"
+       android:id="@+id/menu_notif"
        android:enabled="true"
-       android:icon="@drawable/ic_chat_24"
-       android:title="@string/menu_chats"
+       android:icon="@drawable/notif"
+       android:title=""
        app:showAsAction="ifRoom" />
   <item
-      android:id="@+id/menu_menu"
+      android:id="@+id/menu_settings"
       android:enabled="true"
-      android:icon="@drawable/ic_menu_24"
-      android:title="@string/menu_menu"
+      android:icon="@drawable/settings"
+      android:title=""
       app:showAsAction="ifRoom" />
 </menu>
